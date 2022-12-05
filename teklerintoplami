@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+//Java döngüler ile negatif bir değer girilene kadar kullanıcıdan girişleri kabul eden
+// ve girilen değerlerden tek sayıları toplayıp ekrana basan programı yazıyoruz.
+
+        int sayilar=0;
+        int toplam=0;
+        Scanner input=new Scanner(System.in);
+
+        while(sayilar>=0) {
+            System.out.println("SAYILARI GİRİN (NOT: YALNIZCA TEK OLANLAR TOPLANACAKTIR!):");
+            sayilar=input.nextInt();
+
+            if(sayilar<0){
+                break;
+            }
+           else if (sayilar % 2 != 0) {
+                toplam += sayilar;
+                System.out.println("Tek sayıların toplamı = " + toplam);
+            } else System.out.println("Cift Sayi Girdiniz");
+
+        }
+        }
+
+    }
